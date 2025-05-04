@@ -246,13 +246,13 @@
 % table with personal information on top sidebar on first page
 \newcommand{\personaltable}{%
 	\begin{personal}[0.6em]
-%		\circleicon{\faInfo}     & \cvbirthday \\
+		\circleicon{\faInfo}     & \cvbirthday \\
 		\circleicon{\faEnvelope} & \cvaddress \\
 		\circleicon{\faPhone}    & \cvphone \\
 		\circleicon{\faGlobe}    & \cvsite \\
-        \circleicon{\faGit}    & \cvgit \\
+        \circleicon{\faGit}      & \cvgit \\
 		\circleicon{\faAt}       & \cvmail \\
-		\circleicon{\faKey}      & \cvkey
+		\circleicon{\faKey}      & \cvkey \\
 	\end{personal}
 }
 
@@ -456,14 +456,14 @@
 		\vspace{1ex}
 
 		% name and job
-		\nameandjob
+		 \nameandjob
 
 		% personal information
-		\vspace*{0.5em}
+		%\vspace*{0.5em}
 		\personaltable
 
-		% user definitions
-		\frontsidebar
+		% % user definitions
+		% \frontsidebar
 	\end{sidebar}
 }
 
