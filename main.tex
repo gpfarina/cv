@@ -29,9 +29,9 @@
   bubble center node font = \footnotesize,
   bubble node font = \footnotesize,
   % default: 4cm/2.5cm; make minimum diameter relative to sidebar size
-  bubble center node size = 0.4\sidebartextwidth,
+  bubble center node size = 0.3\sidebartextwidth,
   bubble node size = 0.25\sidebartextwidth,
-  distance center/other bubbles = 1.5em,
+  distance center/other bubbles = .5em,
   % set center bubble color
   bubble center node color = maincolor!70,
   % define the list of colors usable in the diagram
@@ -46,11 +46,11 @@
 %                            PERSONAL INFORMATION
 %-------------------------------------------------------------------------------
 % profile picture
-\cvprofilepic{pics/me.png}
+% \cvprofilepic{pics/foto.jpeg}
 % your name
 \cvname{Gian Pietro\\[0.2em] Farina}
 % job title/career
-\cvjobtitle{Software Engineer\ at Snowflake Inc.}
+\cvjobtitle{Senior Software Engineer\\ \textbf{Snowflake Inc.}}
 % date of birth
 \cvbirthday{Jan 2, 1988}
 % short address/location, use \newline if more than 1 line is required
@@ -58,14 +58,13 @@
 % phone number
 \cvphone{+1 7163354608}
 % personal website
-\cvsite{www.gianpietrofarina.com}
+% \cvsite{www.gianpietrofarina.com}
 \cvgit{https://github.com/gpfarina}
 % email address
 \cvmail{farinagianpietro@gmail.com}
 % pgp key
 \cvkey{3072R/E07677EB}{0xE07677EB}
 % add additional information
-% \newcommand{\additional}{some more?}
 
 % add more profile sections to sidebar on first page
 \addtofrontsidebar{
@@ -77,9 +76,14 @@
     \pointskill{\flag{IT.png}}{Italian}{5}
     \pointskill{\flag{GB.png}}{English}{4}
 	\profilesection{About Me}
-	\aboutme{
-TODO
-	}
+	\aboutme{\textcolor{black}{
+    I am passionate about software and systems, and I thrive in environments where 
+    rigorous thinking and innovation intersect. I take a foundation-first approach: 
+    prioritizing deep understanding and thoughtful design before moving to implementation.
+    I enjoy tackling complex problems and contributing to research-driven projects.
+    I hold a PhD in Computer Science with a focus on formal methods for verification of relational properties such as differential privacy. 
+    In my free time I enjoy playing guitar, chess and studying philosophy.
+	}}
 }
 
 
@@ -95,22 +99,18 @@ TODO
     \pointskill{\faLifeRing}{Helpfulness and \\Endurance}{5}
 	\profilesection{Interests}
 	\chartlabell{0}
+  \vspace{-4.5ex}
 	\begin{figure}\centering
 		\smartdiagram[bubble diagram]{
-			\textcolor{white}{\textbf{PL Theory \&}} \\ 
-			\textcolor{white}{\textbf{Applications}}, % center bubble	
+			\textcolor{white}{\textbf{PL: Applications \&}} \\ 
+			\textcolor{white}{\textbf{Theory}}, % center bubble	
 			\textcolor{black!90}{Verification},
 			\textcolor{black!90}{Security},
-			\textcolor{black!90}{Differential}\\
+			\textcolor{black!90}{Data}\\
             \textcolor{black!90}{Privacy},
 			\textcolor{black!90}{Testing}
 		}
 	\end{figure}
-	\profilesection{Hobbies}
-	\barskill{\faQuestionCircle}{Philosophy}{100}
-	\barskill{\faEye\faMusic}{Chess}{100}
-  \barskill{\faEye\faMusic}{Guitar}{100}
-
 }
 
 
@@ -120,31 +120,21 @@ TODO
 
 
 \begin{document}
-\makefrontsidebar
+\makefrontsidebar{}
 \cvsection{Working Experience}
 \begin{cvtable}
-  \cvitem{02/2023-}{Software Engineer}{{\large{Snowflake Inc.}}}{Research and development of Differential Privacy based software technology.}
-  \cvitem{01/2020{-}02/2023}{Software Engineer}{{\large{LeapYear Technologies Inc.}}}{Research and development of Differential Privacy based software technology.}
-  \cvitem{05/2019{-}08/2019}{Internship}{{\large{Harvard University}}}{Development of a relational symbolic execution engine for R programs for Differential Privacy}
-  \cvitem{01/2019{-}05/2019}{Long Term Visitor}{{\large{Simons Institute {-} UC Berkeley}}}{Data Privacy: Foundations and Applications}
-  \cvitem{2015{-}2018}{Teaching Assistant}{{\large{University at Buffalo}}}{
-    Introduction to Programming Languages (2018), Advanced Topics in Programming Languages (2017), Differential Privacy (2016), 
-    Introduction to Data Mining and Machine Learning (2015)
-  }
-  
-\cvitem{03/2014{-}12/2014}{Penetration Tester}{{\large{Accenture, Prague}}}{
-  Experience with OWASP methodology, ESXi, vSphere, Kali, BurpSuite, NESSUS, mimikatz, Wireshark
-}
-\cvitem{10/2013{-}02/2014}{Information Security Analyst (Internship)}{{\large{LUTECH, Milano}}}{
-  Log Analsysis with LogStash, Elasticsearch, Kibana, SNORT,
-  statistical Analysys for Behavioural Anomaly Detection
-}
-\cvitem{10/2012{-}10/2013}{Cryptography Researcher}{{\large{ETH, Zurich}}}{
-  Research on Black Box Reductions and Meta Reductions in the Random Oracle Model
-}
-\cvitem{01/2012{-}08/2012}{Cryptanalysis Researcher}{{\large{Aalto University, Helsinki}}}{
-   Implementation of the Block Ciphers PRESENT and Maya and test for the statistical saturation attack (SSA) on the Block Cipher PRESENT
-}
+  \cvitem{02/2023-}{{\large\textbf{Senior Software Engineer}}}{{\large{\textbf{Snowflake Inc.}}}}{Integration of a differential privacy engine into Snowflake’s core data platform, enabling built-in, privacy-preserving analytics for customers.
+  Worked across a Haskell-based backend and Java infrastructure, using Bazel and Git in a large-scale, production-grade environment.}
+  \cvitem{01/2020{-}02/2023}{\textbf{Software Engineer}}{{\large{LeapYear Technologies Inc.}}}{Developed a differential privacy-preserving engine in Haskell.
+  Also built a Python-based system to compute disclosure risk for observations based on historical time series data. Experience with pytest, scipy, tensorflow.}
+  \cvitem{05/2019{-}08/2019}{\textbf{Long Term Visitor}}{{\large{Harvard University}}}{Developed in oCaml of a relational symbolic execution engine for R programs.}
+  \cvitem{01/2019{-}05/2019}{\textbf{Long Term Visitor}}{{\large{Simons Institute {-} UC Berkeley}}}{}
+  \cvitem{2015{-}2018}{\textbf{Teaching Assistant}}{{\large{SUNY University at Buffalo, NY}}}{}
+  \cvitem{03/2014{-}12/2014}{\textbf{Penetration Tester}}{{\large{Accenture, Prague}}}{Experience with OWASP methodology, ESXi, vSphere, Kali, BurpSuite, NESSUS, mimikatz, Wireshark}
+  \cvitem{10/2013{-}02/2014}{\textbf{Information Security Analyst}}{{\large{LUTECH, Milano}}}{
+  Log Analsysis with LogStash, Elasticsearch, Kibana, SNORT, statistical Analysys for Behavioural Anomaly Detection}
+  \cvitem{10/2012{-}10/2013}{\textbf{Cryptography Researcher}}{{\large{ETH, Zurich}}}{}
+  \cvitem{01/2012{-}08/2012}{\textbf{Cryptanalysis Researcher}}{{\large{Aalto University, Helsinki}}}{}
 \end{cvtable}
 \cvsection{Programming Languages and Verification Tools}
 \begin{tabular}{l l}
@@ -156,6 +146,7 @@ TODO
   \pointskill{\faCheck}{R}{4}\\
 \end{cvtable} & \hspace{-20em}
                 \begin{cvtable}
+  \pointskill{\faCheck}{Python}{4}\\
   \pointskill{\faCheck}{NuSMV Model Checker}{4}\\
   \pointskill{\faCheck}{Java Path Finder}{4}\\
   \pointskill{\faCheck}{TLA+}{4}\\
@@ -185,10 +176,4 @@ TODO
     PrivInfer: A framework for differentially private Bayesian Programming {-} poster at TPDP 2016,
     Towards differentially private probabilistic programming {-} poster at NIPS 2014}{}{}
 \end{cvtable}
-\cvsection{Interests and Hobbies}
-\begin{cvtable}
-  \cvitem{}{Programming Languages Theory and Applications, Verification, Security, Differential Privacy, Testing, Philosophy, Cooking, Football, Arts}{}{}
-\end{cvtable}
-\cvsignature
-
 \end{document} 

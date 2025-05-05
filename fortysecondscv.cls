@@ -61,7 +61,7 @@
 \newlength\leftrightmargin%
 \newlength\sidebartextwidth
 % default values
-\setlength{\sidebarwidth}{0.34\paperwidth}
+\setlength{\sidebarwidth}{0.36\paperwidth}
 \setlength{\topbottommargin}{0.02\paperheight}
 \setlength{\leftrightmargin}{0.02\paperwidth}
 % user overwrites
@@ -249,7 +249,7 @@
 		\circleicon{\faInfo}     & \cvbirthday \\
 		\circleicon{\faEnvelope} & \cvaddress \\
 		\circleicon{\faPhone}    & \cvphone \\
-		\circleicon{\faGlobe}    & \cvsite \\
+		%\circleicon{\faGlobe}    & \cvsite \\
         \circleicon{\faGit}      & \cvgit \\
 		\circleicon{\faAt}       & \cvmail \\
 		\circleicon{\faKey}      & \cvkey \\
@@ -449,32 +449,32 @@
 \newcommand{\makefrontsidebar}{%
 	\begin{sidebar}
 		% most sidebar commands end with \par; increase space between them
-		\setlength{\parskip}{1ex}
+		% \setlength{\parskip}{1ex}
 
 		% insert profile picture
-		\profileroundedcorners
-		\vspace{1ex}
+		% \profileroundedcorners
+		% \vspace{1ex}
 
 		% name and job
-		 \nameandjob
+		\nameandjob
 
 		% personal information
 		%\vspace*{0.5em}
 		\personaltable
 
 		% % user definitions
-		% \frontsidebar
+		\frontsidebar
+		\backsidebar
 	\end{sidebar}
 }
 
 \newcommand{\makebacksidebar}{%
  	\begin{sidebar}
 		% begin with name instead of picture
-		\nameandjob
+		% \nameandjob
 		
 		% make sure there is no space at top, but after cvjob
 		\setlength{\parskip}{1ex}
-
 		% user definitions
 		\backsidebar
 	\end{sidebar}
