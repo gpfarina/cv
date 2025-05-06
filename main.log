@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.5.4)  5 MAY 2025 18:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.5.4)  6 MAY 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -793,15 +793,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27852 strings out of 474222
- 525094 string characters out of 5748734
+ 27855 strings out of 474222
+ 525154 string characters out of 5748734
  1977975 words of memory out of 5000000
  49474 multiletter control sequences out of 15000+600000
- 635532 words of font info for 143 fonts, out of 8000000 for 9000
+ 635753 words of font info for 145 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  132i,15n,135p,1018b,1156s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on main.pdf (1 page, 95163 bytes).
+Output written on main.pdf (1 page, 95195 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
